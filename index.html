@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Varanda Amarela | Café e quitutes</title>
+  <meta name="description" content="Café coado na hora, gelados e quitutes da casa. Veja o cardápio e faça seu pedido pelo WhatsApp.">
+  <meta name="theme-color" content="#F3C13A">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="pular" href="#cardapio">Pular para o cardápio</a>
+
+  <header class="topo">
+    <div class="topo__inner">
+      <a href="#" class="marca" aria-label="Varanda Amarela, início">
+        <svg class="marca__icone" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18" fill="#F3C13A"/><path d="M11 18h16v4a8 8 0 0 1-16 0z" fill="#2A1A12"/><path d="M27 19h2a3 3 0 0 1 0 6h-2.5" fill="none" stroke="#2A1A12" stroke-width="2"/></svg>
+        Varanda Amarela
+      </a>
+      <nav aria-label="Principal">
+        <ul class="menu">
+          <li><a href="#cardapio">Cardápio</a></li>
+          <li><a href="#casa">A casa</a></li>
+          <li><a href="#visite">Visite</a></li>
+        </ul>
+      </nav>
+      <span class="status" data-status><span class="status__ponto"></span><span data-status-texto>Verificando horário</span></span>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__inner">
+        <div class="hero__texto">
+          <h1>Café coado na hora, na varanda mais amarela do bairro.</h1>
+          <p>Grãos torrados toda semana, gelados para o calor e quitutes que saem quentinhos do forno. Escolha no cardápio e peça pelo WhatsApp.</p>
+          <div class="hero__acoes">
+            <a class="botao" href="#cardapio">Ver cardápio</a>
+            <a class="botao botao--linha" href="#visite">Como chegar</a>
+          </div>
+        </div>
+
+        <div class="hero__arte" aria-hidden="true">
+          <svg class="xicara" viewBox="0 0 320 320">
+            <g class="vapor">
+              <path d="M125 120c-14-18 14-30 0-50" />
+              <path d="M160 116c-14-18 14-30 0-52" />
+              <path d="M195 120c-14-18 14-30 0-50" />
+            </g>
+            <ellipse cx="160" cy="268" rx="120" ry="18" fill="#2A1A12" opacity=".12"/>
+            <ellipse cx="160" cy="256" rx="110" ry="20" fill="#FFFDF7" stroke="#2A1A12" stroke-width="5"/>
+            <path d="M228 168h14a34 34 0 0 1 0 68h-22" fill="none" stroke="#2A1A12" stroke-width="12" stroke-linecap="round"/>
+            <path d="M82 140h156v54a78 78 0 0 1-156 0z" fill="#2F5D46" stroke="#2A1A12" stroke-width="5"/>
+            <ellipse cx="160" cy="140" rx="78" ry="16" fill="#6B3E26" stroke="#2A1A12" stroke-width="5"/>
+            <path d="M118 180c10 14 30 22 42 22" fill="none" stroke="#FFFDF7" stroke-width="5" stroke-linecap="round" opacity=".5"/>
+          </svg>
+          <span class="flor flor--1"></span>
+          <span class="flor flor--2"></span>
+          <span class="flor flor--3"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARDÁPIO -->
+    <section class="secao" id="cardapio">
+      <div class="secao__inner">
+        <div class="cardapio__cabeca">
+          <h2>Cardápio</h2>
+          <p>Toque em <strong>Adicionar</strong> para montar o pedido. No fim, ele vai pronto para o nosso WhatsApp.</p>
+        </div>
+
+        <div class="abas" role="tablist" aria-label="Categorias do cardápio">
+          <button role="tab" class="aba" aria-selected="true" data-categoria="cafes">Cafés</button>
+          <button role="tab" class="aba" aria-selected="false" data-categoria="gelados">Gelados</button>
+          <button role="tab" class="aba" aria-selected="false" data-categoria="salgados">Salgados</button>
+          <button role="tab" class="aba" aria-selected="false" data-categoria="doces">Doces</button>
+        </div>
+
+        <ul class="itens" data-itens aria-live="polite"></ul>
+      </div>
+    </section>
+
+    <!-- A CASA -->
+    <section class="secao secao--verde" id="casa">
+      <div class="secao__inner casa">
+        <h2>Uma varanda para sentar sem pressa</h2>
+        <div class="casa__texto">
+          <p>A Varanda Amarela começou com uma mesa, uma garrafa térmica e vizinhos que paravam para conversar. Hoje são doze mesas, uma torradeira pequena e a mesma ideia: café bom, preço justo e tempo para tomar.</p>
+          <p>Os grãos vêm de pequenos produtores e são torrados aqui toda segunda-feira. Os quitutes seguem receitas de família.</p>
+        </div>
+        <dl class="casa__fatos">
+          <div><dt>Torra</dt><dd>Toda segunda</dd></div>
+          <div><dt>Mesas</dt><dd>12, com tomada</dd></div>
+          <div><dt>Wi-Fi</dt><dd>Grátis</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- VISITE -->
+    <section class="secao" id="visite">
+      <div class="secao__inner visite">
+        <div>
+          <h2>Visite a varanda</h2>
+          <p class="visite__endereco">Rua das Acácias, 123 · Centro</p>
+          <p class="visite__nota">Endereço fictício deste projeto demonstrativo.</p>
+        </div>
+        <table class="horarios">
+          <caption>Horário de funcionamento</caption>
+          <tbody>
+            <tr data-dias="1,2,3,4,5"><th scope="row">Segunda a sexta</th><td>7h às 19h</td></tr>
+            <tr data-dias="6"><th scope="row">Sábado</th><td>8h às 14h</td></tr>
+            <tr data-dias="0"><th scope="row">Domingo</th><td>Fechado</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <!-- CARRINHO -->
+  <aside class="pedido" data-pedido hidden aria-label="Seu pedido">
+    <div class="pedido__resumo">
+      <button class="pedido__abrir" data-pedido-abrir aria-expanded="false">
+        <span data-pedido-qtd>0 itens</span>
+        <strong data-pedido-total>R$ 0,00</strong>
+      </button>
+      <a class="botao botao--whats" data-pedido-enviar href="#" target="_blank" rel="noopener">Pedir pelo WhatsApp</a>
+    </div>
+    <div class="pedido__lista" data-pedido-lista hidden>
+      <ul data-pedido-itens></ul>
+      <button class="pedido__limpar" data-pedido-limpar>Limpar pedido</button>
+    </div>
+  </aside>
+
+  <footer class="rodape">
+    <div class="rodape__inner">
+      <p><strong>Varanda Amarela</strong> é um projeto demonstrativo. A cafeteria, o endereço e os preços são fictícios.</p>
+      <p>Site criado pela <a href="https://grl-azure.vercel.app/" target="_blank" rel="noopener">GRL</a>, sites feitos do zero.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
